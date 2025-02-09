@@ -1,0 +1,2 @@
+#Ignore module slash (/) is telling ignore all files inside nodemodule
+node_modules/
