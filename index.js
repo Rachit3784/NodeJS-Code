@@ -2,12 +2,18 @@ const express = require("express");
 const db = require("./Database/connection.js")
 const Routee = require("./routes/employee.js")
 const bodyParser = require("body-parser");
+require("dotenv").config();
+
+
+const Port = process.env.PORT || 9000
+
 
 server = express();
 
 server.use(bodyParser.json());
 
-server.listen("8080",()=>{
+
+server.listen(Port,()=>{
     console.log("Server Started!!!");
 });
 
